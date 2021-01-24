@@ -1,0 +1,35 @@
+.book{
+    padding: 10px;
+    background-color:#fff;
+    border: 1px solid #bdbdbd;
+    color: black;
+    box-shadow: 1px 1px 3px 0px #9c9c9c;
+    width: 200px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.book__desc{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.book__footer__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.book__footer{
+    bottom: 5px;
+}
+
+.book__edit{
+    width: 100%;
+}

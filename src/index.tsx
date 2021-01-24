@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore, Store } from 'redux';
+import { Provider } from 'react-redux';
+
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { INITIAL_STATE } from './models/StateModel'
+import reducer from './reducer/reducer';
+import { persistDataInLocalStorage } from './utils/utils';
+
+const store:Store = createStore(reducer, INITIAL_STATE);
+persistDataInLocalStorage(store);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

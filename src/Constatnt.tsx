@@ -1,0 +1,3 @@
+const DELAY_SEARCH = 500;
+export const BOOK_LOCAL_STORAGE_KEY = "BOOK_LOCAL_STORAGE_KEY";
+export default DELAY_SEARCH;
